@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kunya Primary School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Kunya Primary School</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="content-section">
+    <div class="interactive-section">
+      <button id="changeTextButton" aria-label="Change text button">Click to change text</button>
+      <button id="toggleImageBtn" aria-label="Toggle image visibility">Show Image</button>
+      <div id="imageGallery" class="gallery-container">
+        <button id="prevBtn" aria-label="Previous image">❮</button>
+        <img id="galleryImage" src="https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&w=600&h=400&fit=crop" alt="School life" class="fade-image active" />
+        <button id="nextBtn" aria-label="Next image">❯</button>
+      </div>
+      <div class="accordion-wrapper">
+        <button class="accordionButton" aria-expanded="false">Learn More</button>
+        <div class="accordionContent" role="region">
+          <p>Here we provide quality education to young minds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About Kunya Primary School</h2>
+    <p>We provide a nurturing environment for children to grow and learn.</p>
+  </section>
+
+  <section id="welcome" class="content-section">
+    <h2>Welcome to Kunya Primary School</h2>
+    <p>
+      Kunya Primary School is dedicated to providing a nurturing and inclusive environment
+      where every child can thrive academically, socially, and emotionally. We serve students
+      from Grades 1 through 6, focusing on holistic development and lifelong learning.
+    </p>
+    <p>
+      Our school hours are Monday to Friday, 8:00 AM to 3:00 PM. Please ensure students arrive
+      on time to maximize learning opportunities.
+    </p>
+  </section>
+
+  <section id="contact-info" class="content-section">
+    <h2>Contact Information</h2>
+    <address>
+      <strong>School Address:</strong> 123 Kunya Road, Nairobi, Kenya<br />
+      <strong>Phone:</strong> +254 700 123 456<br />
+      <strong>Email:</strong> <a href="mailto:info@kunyaprimary.ac.ke">info@kunyaprimary.ac.ke</a><br />
+      <strong>Principal:</strong> Mrs. Grace Mwangi<br />
+      <strong>Principal's Email:</strong>
+      <a href="mailto:grace.mwangi@kunyaprimary.ac.ke">grace.mwangi@kunyaprimary.ac.ke</a>
+    </address>
+  </section>
+
+  <section id="school-life" class="content-section">
+    <h2>School Life & Activities</h2>
+    <p>At Kunya Primary, we believe learning extends beyond the classroom. Our extracurricular activities include:</p>
+    <ul>
+      <li>Sports clubs: football, athletics, and volleyball</li>
+      <li>Music and drama club</li>
+      <li>Science and robotics club</li>
+      <li>Environmental conservation projects</li>
+      <li>Annual school trips and cultural events</li>
+    </ul>
+  </section>
+
+  <section id="for-parents" class="content-section">
+    <h2>Information for Parents</h2>
+    <ul>
+      <li><strong>School Hours:</strong> Students should arrive by 7:45 AM. School starts at 8:00 AM sharp. Pick-up is at 3:00 PM.</li>
+      <li><strong>Supply Lists:</strong> Available at the school office and on our website.</li>
+      <li><strong>Student Handbook:</strong> Contains school policies, code of conduct, and academic expectations. <a href="#">Download PDF</a></li>
+      <li><strong>Dress Code:</strong> Students must wear the official school uniform daily.</li>
+      <li><strong>Parent Portal:</strong> Sign up for the PowerSchool Parent Portal to track your child's progress.</li>
+    </ul>
+  </section>
+
+  <section id="academic-programs" class="content-section">
+    <h2>Academic Programs</h2>
+    <ul>
+      <li>Language Arts (English and Kiswahili)</li>
+      <li>Mathematics</li>
+      <li>Science and Technology</li>
+      <li>Social Studies</li>
+      <li>Creative Arts and Physical Education</li>
+    </ul>
+    <p>We also provide remedial support and enrichment programs to cater to diverse learning needs.</p>
+  </section>
+
+  <section id="news-events" class="content-section">
+    <h2>News & Upcoming Events</h2>
+    <ul>
+      <li><strong>May 20, 2025:</strong> Annual Sports Day – Join us for a day of fun and competition!</li>
+      <li><strong>June 10, 2025:</strong> Parent-Teacher Conferences – Schedule your meeting with teachers.</li>
+      <li><strong>July 1, 2025:</strong> School Holiday Begins – Summer break starts.</li>
+    </ul>
+  </section>
+
+  <section id="staff" class="content-section">
+    <h2>Meet Our Staff</h2>
+    <ul>
+      <li><strong>Mrs. Grace Mwangi</strong> – Principal</li>
+      <li><strong>Mr. John Otieno</strong> – Head of Curriculum</li>
+      <li><strong>Ms. Mary Wanjiku</strong> – Grade 1 Teacher</li>
+      <li><strong>Mr. Peter Kamau</strong> – Physical Education Teacher</li>
+      <li><strong>Mrs. Jane Njeri</strong> – School Counselor</li>
+    </ul>
+  </section>
+
+  <section id="policies" class="content-section">
+    <h2>School Policies</h2>
+    <ul>
+      <li><a href="#">Attendance Policy</a></li>
+      <li><a href="#">Code of Conduct</a></li>
+      <li><a href="#">Anti-Bullying Policy</a></li>
+      <li><a href="#">Health and Safety Guidelines</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact Us Form -->
+  <section id="contact" class="content-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required aria-describedby="nameFeedback" />
+        <span id="nameFeedback" class="feedback"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="emailContact">Email:</label>
+        <input type="email" id="emailContact" name="emailContact" required aria-describedby="emailContactFeedback" />
+        <span id="emailContactFeedback" class="feedback"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" aria-describedby="phoneFeedback" />
+        <span id="phoneFeedback" class="feedback"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required aria-describedby="messageFeedback"></textarea>
+        <span id="messageFeedback" class="feedback"></span>
+      </div>
+
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="register" class="content-section">
+    <h2>Student Registration</h2>
+    <form id="registrationForm" novalidate>
+      <div class="form-group">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required aria-describedby="studentNameFeedback" />
+        <span id="studentNameFeedback" class="feedback"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="parentEmail">Parent Email:</label>
+        <input type="email" id="parentEmail" name="parentEmail" required aria-describedby="parentEmailFeedback" />
+        <span id="parentEmailFeedback" class="feedback"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="passwordReg">Password:</label>
+        <div class="password-container">
+          <input type="password" id="passwordReg" name="passwordReg" required aria-describedby="passwordRegFeedback" />
+          <button type="button" id="togglePasswordReg" class="visibility-toggle" aria-label="Show password">👁</button>
+        </div>
+        <div id="passwordStrength" class="strength-meter"></div>
+        <span id="passwordRegFeedback" class="feedback"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required aria-describedby="confirmPasswordFeedback" />
+        <span id="confirmPasswordFeedback" class="feedback"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="gradeLevel">Grade Level:</label>
+        <select id="gradeLevel" name="gradeLevel" required aria-describedby="gradeLevelFeedback">
+          <option value="">Select Grade</option>
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+          <option value="5">Grade 5</option>
+          <option value="6">Grade 6</option>
+        </select>
+        <span id="gradeLevelFeedback" class="feedback"></span>
+      </div>
+
+      <button type="submit" id="registerBtn">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kunya Primary School</p>
+    <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+  <div class="bg-bubbles"></div>
+</body>
+</html>
